@@ -1,10 +1,10 @@
 //FUNCTION DEFINITION
 
-function tambah(a, b) {
-    return a + b;
-}
-let hasil = tambah(4, 5);
-//console.log(hasil);
+// function tambah(a, b) {
+//     return a + b;
+// }
+// let hasil = tambah(4, 5);
+// console.log(hasil);
 
 //Dalam contoh di atas, kita memiliki fungsi bernama tambah yang mengambil dua parameter a dan b, 
 // dan mengembalikan hasil penjumlahan dari kedua parameter tersebut. Kemudian, kita memanggil 
@@ -14,10 +14,10 @@ let hasil = tambah(4, 5);
 //FUNCTION PARAMETERS
 // Fungsi sederhana yang menggabungkan dua string
 function string(a, b) {
-    return a + 'aku ' + b;
+    return a + ' ' + b;
 }
-let jadi = string('Halo ', 'via ');
-//console.log(jadi);
+let jadi = string('Halo', 'via');
+console.log(jadi);
 
 // Dalam contoh di atas, string adalah fungsi yang mengambil dua parameter a 
 // dan b. Saat fungsi dipanggil, kedua argumen dilewatkan ke parameter fungsi, yang 
@@ -28,13 +28,15 @@ let jadi = string('Halo ', 'via ');
 
 //FUNCTION INVOCATION
 // Definisi fungsi sederhana yang mencetak pesan ke konsol
+
 function sapa() {
     console.log('Halo! Selamat datang.');
 }
 //sapa();
 
 //FUNCTION CALL
-// Definisikan objek
+
+//Definisikan objek
 // let person = {
 //     fullName: function() {
 //       return this.firstName + " " + this.lastName;
@@ -48,10 +50,11 @@ function sapa() {
 //   // Gunakan metode call untuk memanggil fungsi fullName dari objek person, 
 //   // tetapi gunakan objek person1 sebagai konteksnya
 //   let fullName = person.fullName.call(person1);
-//   //console.log(fullName);  
+//   console.log(fullName);  
 
 //FUNCTION APPLY
-// Definisikan objek
+
+//Definisikan objek
 // let person = {
 //     fullName: function(city, country) {
 //       return this.firstName + " " + this.lastName + "," + city + "," + country;
@@ -72,18 +75,18 @@ function sapa() {
 
 //FUNCTION BIND
 //Definisikan fungsi
-let greet = function() {
-    return `Halo, ${this.name}! Selamat datang di ${this.city}.`;
-};
+// let greet = function() {
+//     return `Halo, ${this.name}! Selamat datang di ${this.city}.`;
+// };
 
-// Definisikan objek
-let person = {
-    name: 'Patricia ',
-    city: 'Malaysia '
-};
+// // Definisikan objek
+// let person = {
+//     name: 'Patricia ',
+//     city: 'Malaysia '
+// };
 
-// Gunakan metode bind untuk mengikat fungsi greet dengan konteks objek person
-let greetingMessage = greet.bind(person);
+// // Gunakan metode bind untuk mengikat fungsi greet dengan konteks objek person
+// let greetingMessage = greet.bind(person);
 
 // Panggil fungsi yang sudah di-bind
 console.log(greetingMessage());
